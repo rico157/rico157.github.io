@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 const posts = await getCollection('myapps');
 ---
 
-<Layout title="Bento myapps">
+<Layout title="Just some apps">
   {posts.map(post => (
     <BentoCard
       title={post.data.title}
