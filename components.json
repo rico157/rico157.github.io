@@ -22,23 +22,23 @@
   "menuColor": "default",
   "menuAccent": "subtle",
   "registries": {
-    "magicui": {
-      "url": "https://magicui.design/r"
+    "@magicui": {
+      "url": "https://magicui.design/r/{name}.json"
     },
-    "aceternity": {
-      "url": "https://ui.aceternity.com/registry"
+    "@aceternity": {
+      "url": "https://ui.aceternity.com/registry/{name}.json"
     },
-    "coss": {
-      "url": "https://coss.com/ui/r"
+    "@coss": {
+      "url": "https://coss.com/ui/r/{name}.json"
     },
-    "motion-primitives": {
-      "url": "https://motion-primitives.com/c"
+    "@motion-primitives": {
+      "url": "https://motion-primitives.com/c/{name}.json"
     },
-    "tailark": {
-      "url": "https://tailark.com/r"
+    "@tailark": {
+      "url": "https://tailark.com/r/{name}.json"
     },
-    "cult-ui": {
-      "url": "https://cult-ui.com/r"
+    "@cult-ui": {
+      "url": "https://cult-ui.com/r/{name}.json"
     }
   }
 }
