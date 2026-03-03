@@ -70,17 +70,17 @@ export function DevHero() {
 
             <div className="flex items-center gap-1">
               <Button variant="ghost" size="icon" className="min-h-11 min-w-11" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/rickysrc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <HugeiconsIcon icon={Github01Icon} strokeWidth={2} />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="min-h-11 min-w-11" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/riccardo-cogoni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <HugeiconsIcon icon={Linkedin01Icon} strokeWidth={2} />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="min-h-11 min-w-11" asChild>
-                <a href="mailto:hello@example.com" aria-label="Email">
+                <a href="mailto:hello@riccardocogoni.com" aria-label="Email">
                   <HugeiconsIcon icon={Mail01Icon} strokeWidth={2} />
                 </a>
               </Button>

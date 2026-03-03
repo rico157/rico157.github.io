@@ -1,14 +1,9 @@
 import { motion, useScroll, useSpring } from "motion/react"
-import { BackButton } from "@/components/back-button"
 import { DevHero } from "@/components/dev-hero"
 import { DevProjects } from "@/components/dev-projects"
 import { DevSkills } from "@/components/dev-skills"
 
-interface DevPageProps {
-  onNavigateHome: () => void
-}
-
-export function DevPage({ onNavigateHome }: DevPageProps) {
+export function DevPage() {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 50 })
 
@@ -20,7 +15,6 @@ export function DevPage({ onNavigateHome }: DevPageProps) {
         style={{ scaleX }}
       />
 
-      <BackButton onClick={onNavigateHome} />
       <DevHero />
       <DevProjects />
       <DevSkills />

@@ -1,4 +1,4 @@
-// Skills sourced from: GitHub repos (github.com/rico157), CV, and professional experience at Thirst
+// Skills sourced from: GitHub repos (github.com/rickysrc), CV, and professional experience at Thirst
 import type { SkillCategory } from "@/types/portfolio"
 
 export const skillCategories: SkillCategory[] = [

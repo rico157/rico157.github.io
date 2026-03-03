@@ -1,5 +1,6 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react"
-import { ArrowRightIcon } from "@radix-ui/react-icons"
+import { HugeiconsIcon } from "@hugeicons/react"
+import { ArrowRight01Icon } from "@hugeicons/core-free-icons"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -78,7 +79,7 @@ const BentoCard = ({
         >
           <a href={href}>
             {cta}
-            <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+            <HugeiconsIcon icon={ArrowRight01Icon} className="ms-2 h-4 w-4 rtl:rotate-180" strokeWidth={2} />
           </a>
         </Button>
       </div>
@@ -97,7 +98,7 @@ const BentoCard = ({
       >
         <a href={href}>
           {cta}
-          <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+          <HugeiconsIcon icon={ArrowRight01Icon} className="ms-2 h-4 w-4 rtl:rotate-180" strokeWidth={2} />
         </a>
       </Button>
     </div>

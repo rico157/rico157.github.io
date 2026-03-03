@@ -26,13 +26,23 @@ function FeaturedProjectCard({ project }: { project: Project }) {
         gradientOpacity={0.15}
       >
         <div className="flex h-full flex-col md:flex-row">
-          {/* Gradient visual area */}
+          {/* Visual area */}
           <div
-            className="flex min-h-56 items-end rounded-t-lg p-4 md:w-2/5 md:rounded-l-lg md:rounded-tr-none"
+            className="relative flex min-h-56 items-end rounded-t-lg p-4 md:w-2/5 md:rounded-l-lg md:rounded-tr-none overflow-hidden"
             style={{ background: project.gradient }}
           >
+            {project.imageUrl && (
+              <>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/5" />
+              </>
+            )}
             {project.category && (
-              <Badge variant="secondary" className="bg-white/15 text-white backdrop-blur-sm border-white/10">
+              <Badge variant="secondary" className="relative z-10 bg-white/15 text-white backdrop-blur-sm border-white/10">
                 {project.category}
               </Badge>
             )}
@@ -98,13 +108,23 @@ function ProjectCard({ project, index = 0 }: { project: Project; index?: number 
         gradientOpacity={0.15}
       >
         <div className="flex h-full flex-col">
-          {/* Gradient visual area */}
+          {/* Visual area */}
           <div
-            className="flex min-h-36 items-end rounded-t-lg p-4 sm:min-h-40"
+            className="relative flex min-h-36 items-end rounded-t-lg p-4 sm:min-h-40 overflow-hidden"
             style={{ background: project.gradient }}
           >
+            {project.imageUrl && (
+              <>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/5" />
+              </>
+            )}
             {project.category && (
-              <Badge variant="secondary" className="bg-white/15 text-white backdrop-blur-sm border-white/10 text-xs">
+              <Badge variant="secondary" className="relative z-10 bg-white/15 text-white backdrop-blur-sm border-white/10 text-xs">
                 {project.category}
               </Badge>
             )}
