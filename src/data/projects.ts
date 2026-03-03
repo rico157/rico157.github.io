@@ -1,4 +1,5 @@
 import type { Project } from "@/types/portfolio"
+import tellMeQuizImg from "@/assets/tell-me-quiz.webp"
 
 export const projects: Project[] = [
   {
@@ -9,7 +10,7 @@ export const projects: Project[] = [
     techStack: ["Swift", "SwiftUI", "iOS"],
     gradient: "linear-gradient(135deg, oklch(0.35 0.12 200), oklch(0.25 0.08 230))",
     category: "iOS",
-    imageUrl: "https://raw.githubusercontent.com/rickysrc/tell-me-quiz/main/public/screenshots/iphone/1.png",
+    imageUrl: tellMeQuizImg,
     liveUrl: "https://www.riccardocogoni.com/tell-me-quiz/",
     sourceUrl: "https://github.com/rickysrc/tell-me-quiz",
     featured: true,
